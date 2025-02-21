@@ -1,0 +1,196 @@
+body {
+  background-image: url(https://media.ouest-france.fr/v1/pictures/MjAyMjAzY2I2MGM1YTNkNDQzYjE4NzZkMzFhNzVhOTBmNWE5ZGM?width=630&height=354&focuspoint=50%2C25&cropresize=1&client_id=bpeditorial&sign=c12f6ae316cd81ddb41ad5d88937afbf7de2b02f544235714017ac67c1196d80);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: grey;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px black;
+  max-width: auto;
+  max-height: auto;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  animation: moveBackground 100s linear infinite;
+}
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.title {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 55px;
+  color: rgb(64, 68, 76);
+  display: inline-block;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+  text-shadow: 3px 3px 5px rgba(217, 212, 212, 0.9);
+  animation: lampeggio 5s infinite forwards;
+  padding-top: 120px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+hr {
+  width: 70%;
+  font-size: large;
+  border-style: double;
+  border-color: rgb(101, 101, 100);
+  border-radius: 50%;
+}
+
+@keyframes lampeggio {
+  0% {
+    color: rgb(124, 117, 117);
+  }
+  25% {
+    color: rgb(71, 71, 64);
+  }
+  75% {
+    color: rgb(62, 51, 51);
+  }
+  100% {
+    color: rgb(124, 117, 117);
+  }
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 15px;
+  box-shadow: 5px 5px 5px 5px rgb(68, 64, 64);
+}
+.logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.title:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.description {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  color: rgb(64, 68, 76);
+}
+
+.description1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  color: rgb(16, 16, 16);
+}
+.legend {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  color: rgb(66, 64, 64);
+  font-size: 40px;
+  border: nonee;
+  text-align: center;
+  border-top: 5px solid white;
+}
+.experience {
+  background-color: white;
+  border: 3px solid grey;
+  border-radius: 25% 7%;
+  padding: 10px;
+  width: max-content;
+}
+.form {
+  border: 3px solid white;
+  border-radius: 5%;
+  padding: 50px 100px;
+  width: fit-content;
+  background-color: grey;
+  border-radius: 10% 10%;
+}
+.name-label,
+.email,
+.number,
+.bestplace,
+.comeagain,
+.textarea {
+  width: 600px;
+  height: 70px;
+  border: 1px solid white;
+  border-radius: 25% 7%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 15px;
+}
+input:focus {
+  border: none;
+  outline: none;
+}
+#name,
+#number,
+#email {
+  font-size: 18px;
+}
+
+#name,
+#email,
+#number,
+.bestplace {
+  border: none;
+}
+.textarea {
+  color: grey;
+  padding-top: 55px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  resize: none;
+}
+.bestplace {
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  color: grey;
+}
+
+.testo,
+.testo1 {
+  padding-top: 30px;
+}
+
+#submit {
+  background-color: rgb(89, 89, 97);
+  color: white;
+  padding: 10px 70px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.submit {
+  color: white;
+  margin-top: 3px;
+  font-size: 15px;
+}
+
+footer {
+  padding-top: 60px;
+}
+a {
+  color: rgb(21, 17, 17);
+  font-size: 25px;
+  text-decoration-line: underline;
+}
+a:hover {
+  color: rgb(67, 62, 62);
+  background-color: white;
+}
